@@ -180,7 +180,7 @@ body{
   .show {display: block;}
   /*---------------------------*/
   #bodyimagefat{
-    background-color: ;
+    background-color: 
   
   }
   #cgf{
@@ -272,7 +272,7 @@ h3{
   color: #fff;
 }
 
-header h3{}
+/* header h3{} */
 
 .content h3{
   line-height: 1000px;
@@ -357,7 +357,7 @@ table,thead,tbody,tfoot,tr, td,th{
 .th{
   font-weight: 700;
   border:1px solid #dedede;
-  &:nth-child(odd){
+}:nth-child(odd){
     border-right:none;
   }
 }
@@ -365,7 +365,7 @@ table,thead,tbody,tfoot,tr, td,th{
   font-weight: 300;
   border:1px solid #dedede;
   border-top:none;
-  &:nth-child(odd){
+}:nth-child(odd){
     border-right:none;
   }
 }

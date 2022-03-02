@@ -1,13 +1,28 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>List of differences</title>
-    <link rel=StyleSheet href="style.css" type="text/css">
-    <link rel=StyleSheet href="style2.css" type="text/css">
-    <link
-  </head>
-  <body>
+import React,{ Component } from 'react';
+
+
+ 
+    const App = () => {
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+      
+      // Close the dropdown if the user clicks outside of it
+      window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show');
+            }
+          }
+        }
+      }
+    
+      return (
+        <><></>
     <div id="scroll-animate">
     <div id="scroll-animate-main">
       <div class="wrapper-parallax">
@@ -88,25 +103,9 @@ Venmo payments can be canceled before they are finalized. This provides some abi
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <script src="javatext.js"></script>
   <script>
-  /* When the user clicks on the button,
-  toggle between hiding and showing the dropdown content */
-  function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
-  }
-
-  // Close the dropdown if the user clicks outside of it
-  window.onclick = function(event) {
-    if (!event.target.matches('.dropbtn')) {
-      var dropdowns = document.getElementsByClassName("dropdown-content");
-      var i;
-      for (i = 0; i < dropdowns.length; i++) {
-        var openDropdown = dropdowns[i];
-        if (openDropdown.classList.contains('show')) {
-          openDropdown.classList.remove('show');
-        }
-      }
-    }
-  }
+  
   </script>
-  </body>
-</html>
+  <></>
+  )
+  );{'}'}
+export default App;
