@@ -1,8 +1,8 @@
 import React,{ Component } from 'react';
 
-function App() {
+
  
-    const MyComponent = () => {
+    const App = () => {
       return (
          <>
          <div>
@@ -23,7 +23,7 @@ function App() {
         </div></>
         
     
-         )};
+         
       
-      }
+      );}
 export default App;
