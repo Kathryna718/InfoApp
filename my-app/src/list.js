@@ -3,26 +3,10 @@ import React,{ Component } from 'react';
 
  
     const App = () => {
-      function myFunction() {
-        document.getElementById("myDropdown").classList.toggle("show");
-      }
       
-      // Close the dropdown if the user clicks outside of it
-      window.onclick = function(event) {
-        if (!event.target.matches('.dropbtn')) {
-          var dropdowns = document.getElementsByClassName("dropdown-content");
-          var i;
-          for (i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('show')) {
-              openDropdown.classList.remove('show');
-            }
-          }
-        }
-      }
     
       return (
-        <><></>
+        <>
     <div id="scroll-animate">
     <div id="scroll-animate-main">
       <div class="wrapper-parallax">
@@ -105,7 +89,7 @@ Venmo payments can be canceled before they are finalized. This provides some abi
   <script>
   
   </script>
-  <></>
-  )
-  );{'}'}
+  </>
+  );}
+  
 export default App;
