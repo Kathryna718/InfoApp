@@ -1,39 +1,10 @@
 import React, { Component } from "react";
-
+import contactimg from "./images/xxx-28.jpg"
 const App = () => {
-  function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
-  }
-
-  // Close the dropdown if the user clicks outside of it
-  window.onclick = function (event) {
-    if (!event.target.matches(".dropbtn")) {
-      var dropdowns = document.getElementsByClassName("dropdown-content");
-      var i;
-      for (i = 0; i < dropdowns.length; i++) {
-        var openDropdown = dropdowns[i];
-        if (openDropdown.classList.contains("show")) {
-          openDropdown.classList.remove("show");
-        }
-      }
-    }
-  };
-
+ 
   return (
     <div className="Contact">
-      <marquee>
-        <div class="dropdown">
-          <button onclick="myFunction()" class="dropbtn">
-            Dropdown
-          </button>
-          <div id="myDropdown" class="dropdown-content">
-            <a href="Zelle.html">Home</a>
-            <a href="list.html">List</a>
-            <a href="Table.html">table</a>
-            <a href="form.html">Feedback</a>
-            <a href="contact.html">Contact</a>
-          </div>
-        </div>
+      
 
         <h1>Contact us </h1>
 
@@ -89,10 +60,9 @@ const App = () => {
           <textarea name="message" id="message" rows="10" cols="45"></textarea>
           <button type="submit">Submit</button>
         </form>
-      </marquee>
-
+     
       <center>
-        <img src="xxx-28.jpg" usemap="#zelle" />
+        <img src={contactimg} usemap="#zelle" />
         <map name="zelle">
           <area
             shape="rect"
@@ -103,6 +73,7 @@ const App = () => {
         </map>
       </center>
     </div>
+  
   );
 };
 export default App;
