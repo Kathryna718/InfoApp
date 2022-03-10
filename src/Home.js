@@ -1,10 +1,7 @@
 import React,{ Component } from 'react';
 import "./App.css"
 import zelleimg from "./images/BankingApp.jpg"
- import Table from "./Table.js"
-import {Link} from "react-router-dom"
-import Navbar from './Navbar';
-import Typography from '@material-ui/core/Typography';
+
 
     const Home = () => {
       
@@ -12,7 +9,7 @@ import Typography from '@material-ui/core/Typography';
       return (
 
        <><div>
-          <Navbar />
+          
         </div><><><center><img src={zelleimg} width="500"></img></center><>
 
 
