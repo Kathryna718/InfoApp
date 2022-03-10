@@ -51,7 +51,7 @@ const App = () => {
             checked=""
           ></input>
           <label htmlFor="female">Female</label>
-          <h1>Hello</h1>
+          
 
           <fieldset class="group">
             <label for="yearbirth">Year of Birth</label>
