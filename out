@@ -1,0 +1,50 @@
+
+> my-app@0.1.0 start /home/kathrynabrown22/InfoApp/my-app
+> react-scripts start
+
+Starting the development server...
+
+Failed to compile.
+
+Module.createRequire is not a function
+assets by path static/ 1.49 MiB
+  asset static/js/bundle.js 1.48 MiB [emitted] (name: main) 1 related asset
+  asset static/js/node_modules_web-vitals_dist_web-vitals_js.chunk.js 6.92 KiB [emitted] 1 related asset
+  asset static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg 2.57 KiB [emitted] (auxiliary name: main)
+asset index.html 970 bytes [emitted]
+asset asset-manifest.json 546 bytes [emitted]
+cached modules 1.37 MiB (javascript) 31.3 KiB (runtime) [cached] 122 modules
+
+ERROR in Module.createRequire is not a function
+
+ERROR in Error: Child compilation failed:
+  Module.createRequire is not a function
+  
+  - child-compiler.js:169 childCompiler.runAsChild
+    [my-app]/[html-webpack-plugin]/lib/child-compiler.js:169:18
+  
+  - Compiler.js:564 compile
+    [my-app]/[webpack]/lib/Compiler.js:564:11
+  
+  - Compiler.js:1183 hooks.afterCompile.callAsync.err
+    [my-app]/[webpack]/lib/Compiler.js:1183:17
+  
+  
+  - Hook.js:18 Hook.CALL_ASYNC_DELEGATE [as _callAsync]
+    [my-app]/[tapable]/lib/Hook.js:18:14
+  
+  - Compiler.js:1179 compilation.seal.err
+    [my-app]/[webpack]/lib/Compiler.js:1179:33
+  
+  - Compilation.js:2785 finalCallback
+    [my-app]/[webpack]/lib/Compilation.js:2785:11
+  
+  - Compilation.js:3090 hooks.afterSeal.callAsync.err
+    [my-app]/[webpack]/lib/Compilation.js:3090:11
+  
+  
+  - Hook.js:18 Hook.CALL_ASYNC_DELEGATE [as _callAsync]
+    [my-app]/[tapable]/lib/Hook.js:18:14
+
+1 ERROR in child compilations (Use 'stats.children: true' resp. '--stats-children' for more details)
+webpack 5.69.1 compiled with 3 errors in 1139 ms
