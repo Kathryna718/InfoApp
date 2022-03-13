@@ -10,7 +10,7 @@ import zelleimg from "./images/BankingApp.jpg"
 
        <><div>
           
-        </div><><><center><img src={zelleimg} width="500"></img></center><>
+        </div><><><center><img src={zelleimg} width="800"></img></center><>
 
 
 

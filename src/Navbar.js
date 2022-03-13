@@ -27,7 +27,7 @@ function Navbar() {
         <div className="logo">Zelle</div>
         <ul className="nav-links">
           <li>
-        <Link className="link" to="/">Home</Link>
+        <Link className="link" to="/">About Zelle</Link>
           </li>
           <li>
           <Link className="link" to="/Table">Getting Started</Link>

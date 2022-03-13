@@ -33,8 +33,10 @@ body {
   color: #333;
   padding: 20px;
   width: 180px; /* plan width = 180 + 20 + 20 + 1 + 1 = 222px */
-  float: left;
+  float: right;
   position: relative;
+  ;
+  
 }
 
 #pricing-table #most-popular {
@@ -425,7 +427,7 @@ th {
   font-size: 3em;
 }
 
-left {
+.left {
   float: center;
 }
 
@@ -438,12 +440,7 @@ left {
 
 /* enter the form styles below */
 
-form {
-  margin-top: 1em;
-  border: solid 2px #305704;
-  padding: 1em;
-  font-size: 16px;
-}
+
 
 #formcontainer {
   width: 47%;
@@ -501,7 +498,7 @@ input.button {
   padding: 4px;
   border: 1px solid #305704;
   display: inline;
-  background-color: #f5aaf5;
+  background-color: #e7e7e7;
 }
 
 
@@ -525,14 +522,16 @@ input.button {
 
 li {
   list-style-type: none;
+
 }
 
 a {
   text-decoration: none;
+  
 }
 
 nav {
-  display: flex;
+  display:flex;
   justify-content: space-around;
   min-height: 10vh;
   align-items: center;
@@ -541,6 +540,8 @@ nav {
   position: fixed;
   z-index: 100;
   width: 100%;
+  
+  
 }
 
 nav .logo {
@@ -577,6 +578,7 @@ nav .nav-links a:hover {
 
 img {
   clip-path: circle(50%);
+  
 }
 @media only screen and (max-width: 670px) {
   .dropdown {
@@ -587,3 +589,10 @@ img {
     display: none;
   }
 }
+
+/* form{
+  margin-top: 1em;
+   border: solid 2px #305704;
+   padding: 1em;
+   font-size: 14px;
+} */

@@ -1,66 +1,51 @@
 import React, { Component } from "react";
-import contactimg from "./images/xxx-28.jpg"
+import contactimg from "./images/xxx-28.jpg";
+import emailjs from "emailjs-com"
+
 const App = () => {
- 
+function sendEmail(e){
+  e.preventDefault();
+
+  emailjs.sendForm(
+    "service_sryc7va",
+  "template_8pm6akk",
+  e.target,
+  "d7Wm4kfaIRKYDfMGS"
+  ).then(res=>{
+      console.log(res);
+  }).catch(err=> console.log(err));
+
+}
   return (
-    <div className="Contact">
-      
+    <div
+      className="Container border"
+      style={{
+        marginTop: "50px",
+        width: "50%",
+        backgroundPosition: "center",
+        backgroundSize: "cover",
+        backgroundImage: `url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGUJD0DgCxdTDAbvk6u3gVm25AqOS6Ksnt9Q&usqp=CAU')`,
+      }}
+    >
+      <h5 style={{ marginTop: "25px" }}>Contact Form </h5>
 
-        <h1>Contact us </h1>
+      <form className="row" style={{ margin: "25px 85px 75px 100px" }} onSubmit={sendEmail}>
+        <label>Name</label>
+        <input type="text" name="Name"  className="form-control"/>
 
-        <form action="/" method="post">
-          <div class="flex flex-col mb-4 md:w-1/2">
-            <label
-              class="mb-2 uppercase tracking-wide font-bold text-lg text-grey-darkest"
-              for="first_name"
-            >
-              First Name
-            </label>
-            <input
-              class="border py-2 px-3 text-grey-darkest md:mr-2"
-              type="text"
-              name="first_name"
-              id="first_name"
-            />
-          </div>
+        <label>Email</label>
+        <input type="email" name="user_email" className="form-control" />
 
-          <div class="flex flex-col mb-4 md:w-1/2">
-            <label
-              class="mb-2 uppercase font-bold text-lg text-grey-darkest md:ml-2"
-              for="last_name"
-            >
-              Last Name
-            </label>
-            <input
-              class="border py-2 px-3 text-grey-darkest md:ml-2"
-              type="text"
-              name="last_name"
-              id="last_name"
-            />
-          </div>
+        <label>Message</label>
+        <textarea name="message" rows="4" className="form-control" />
+        <input
+          type="submit"
+          value="Send" 
+          className="form-control btn btn-primary"
+          style={{ marginTop: "1px" }}
+        />
+      </form>
 
-          <div class="flex flex-col mb-4 md:w-1/2">
-            <label
-              class="mb-2 uppercase font-bold text-lg text-grey-darkest md:ml-2"
-              for="last_name"
-            >
-              Subject
-            </label>
-            <input
-              class="border py-2 px-3 text-grey-darkest md:ml-2"
-              type="text"
-              name="last_name"
-              id="last_name"
-            />
-          </div>
-
-          <label for="email">Email</label>
-          <input type="email" name="email" id="email"></input>
-          <label for="message">Message</label>
-          <textarea name="message" id="message" rows="10" cols="45"></textarea>
-          <button type="submit">Submit</button>
-        </form>
-     
       <center>
         <img src={contactimg} usemap="#zelle" />
         <map name="zelle">
@@ -73,7 +58,6 @@ const App = () => {
         </map>
       </center>
     </div>
-  
   );
-};
+    }
 export default App;

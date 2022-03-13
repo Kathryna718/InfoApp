@@ -7,11 +7,13 @@ import Contact from "./Contact.js"
 import Dropdown from "./Dropdown";
 import "./App.css";
 import Navbar from "./Navbar";
+
 const App = () => {
   return ( 
     
     <div className="App">
      <Navbar/>
+    
         <Routes> 
           <Route path = "/Table" element ={<Table/>}/>        
           <Route path = "/" element ={<Home/>}/> 

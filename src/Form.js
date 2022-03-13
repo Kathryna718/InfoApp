@@ -38,36 +38,6 @@ const App = () => {
         </fieldset>
 
         <fieldset>
-          <legend>Personal Information</legend>
-
-          <input type="radio" name="gender" id="male" value="male"></input>
-          <label for="male">Male</label>
-
-          <input
-            type="radio"
-            name="gender"
-            id="female"
-            value="female"
-            checked=""
-          ></input>
-          <label htmlFor="female">Female</label>
-          
-
-          <fieldset class="group">
-            <label for="yearbirth">Year of Birth</label>
-            <input
-              value=""
-              type="text"
-              name="yearbirth"
-              id="yearbirth"
-              class="text"
-              size="4"
-              maxlength="4"
-            ></input>
-          </fieldset>
-        </fieldset>
-
-        <fieldset>
           <legend>I would be interested in: (check all that apply)</legend>
 
           <fieldset class="group">
@@ -125,10 +95,7 @@ const App = () => {
         <input type="reset" value="Cancel" class="button"></input>
       </form>
 
-      <audio controls autoplay>
-        <source src="Springtime.mp3" type="audio/mpeg"></source>
-        Your browser does not support the audio element.
-      </audio>
+      
     </>
   );
 };
