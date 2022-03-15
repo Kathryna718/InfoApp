@@ -2,9 +2,8 @@ import React, { Component } from "react";
 
 const App = () => {
   return (
-    <>
-      <div id="formcontainer"></div>
 
+    <div id="formcontainer" style={{marginTop:"15vh"}}>
       <form
         id="survey"
         name="survey"
@@ -95,8 +94,8 @@ const App = () => {
         <input type="reset" value="Cancel" class="button"></input>
       </form>
 
-      
-    </>
+    </div>      
+
   );
 };
 export default App;
