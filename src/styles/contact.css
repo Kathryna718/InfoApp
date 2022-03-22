@@ -6,7 +6,7 @@
 }
 
 .visit {
-  dispay:flex;
+  display:flex;
   flex-direction: column;
   margin-top: 30px;
   align-items: center;
@@ -14,7 +14,7 @@
 .visit h2 {
   font-size: 30px;
 }
-.visit img {
+/* .visit img {
   width: 200px;
   height: 200px;
-}
+} */

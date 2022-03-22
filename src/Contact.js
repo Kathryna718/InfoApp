@@ -58,7 +58,7 @@ function sendEmail(e){
           <h2> visit site at :</h2>
         <img src={contactimg} usemap="#zelle" />
         <map name="zelle">
-          <area
+          <area 
             shape="rect"
             href="https://www.zellepay.com/"
             coords="352,1,598,329"
