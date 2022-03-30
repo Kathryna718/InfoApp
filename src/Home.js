@@ -1,14 +1,17 @@
 import React,{ Component } from 'react';
 import './styles/home.css'
 import zelleimg from "./images/BankingApp.jpg"
-
+import screenshotimg from "./images/zelleScreenshot.png";
 
 const Home = () => {
 return (
 
  <div className="home-container">
-    <img src={zelleimg}  />
+    {/* <img src={zelleimg}/> */}
+    <img src={screenshotimg}/>
+  
     <div className='center'>
+      
       <p>
         The biggest U.S. Banks have backed a new service that lets you pay friends and         family faster.  
       </p>
@@ -63,5 +66,13 @@ return (
     <iframe width="800" height="400" src="https://www.youtube.com/embed/IDZa1wRsCYM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           
   </div>
+
+
+
+
+
+
+
+
 );}
 export default Home;

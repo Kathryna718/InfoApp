@@ -1,8 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import MenuIcon from '@mui/icons-material/Menu';
-
-
+import logo from "./images/App.jpg";
 function Navbar() {
     function myFunction() {
         document.getElementById("myDropdown").classList.toggle("show");
@@ -24,7 +23,7 @@ function Navbar() {
   return (
     <div>
       <nav>
-        <div className="logo">Zelle</div>
+        <div className="logo"></div><img alt="logo" src={logo} height={80} width={80} />
         <ul className="nav-links">
           <li>
         <Link className="link" to="/">About Zelle</Link>

@@ -288,7 +288,7 @@ h3 {
   text-align: center;
   font-family: Lola;
   font-size: 25px;
-  color: rgba(241, 0, 0, 0.945);
+  color: rgba(0, 0, 0, 0.945);
 }
 
 /* header h3{} */
@@ -575,12 +575,21 @@ nav .nav-links a:hover {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-size: medium;
+  
 }
 
 img {
   clip-path: circle(50%);
+  -webkit-box-reflect:right;
   
 }
+.home-container {
+  position: relative;
+  width: 50%;
+  background-color:white;
+}
+
+
 @media only screen and (max-width: 670px) {
   .dropdown {
     display: inline-block;
