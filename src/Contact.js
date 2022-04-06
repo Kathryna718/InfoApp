@@ -29,7 +29,7 @@ function sendEmail(e){
         width: "50%",
         backgroundPosition: "center",
         backgroundSize: "cover",
-        backgroundImage: `url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGUJD0DgCxdTDAbvk6u3gVm25AqOS6Ksnt9Q&usqp=CAU')`,
+        backgroundImage: `url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRORv25FMwuWR2dWobXqwlDYe6Bxv0V6rGrow&usqp=CAU')`,
       }}
     >
       <h5 style={{ marginTop: "25px", textAlign:"center" }}>Contact Form </h5>
