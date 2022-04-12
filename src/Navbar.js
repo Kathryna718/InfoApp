@@ -23,7 +23,7 @@ function Navbar() {
   return (
     <div>
       <nav>
-        <div className="logo"></div><img alt="logo" src={logo} height={80} width={80} />
+        <Link className="logo" to="/"> <img alt="logo" src={logo} height={80} width={80} /></Link> 
         <ul className="nav-links">
           <li>
         <Link className="link" to="/">About Zelle</Link>

@@ -14,7 +14,8 @@ const App = () => {
     
     <div className="App">
      <Navbar/>
-      {/* <Footer/> */}
+     
+     
         <Routes> 
           <Route path = "/Table" element ={<Table/>}/>        
           <Route path = "/" element ={<Home/>}/> 
@@ -22,7 +23,7 @@ const App = () => {
           <Route path = "/Contact" element ={<Contact/>}/>  
           <Route path = "/Feedback" element ={<Form/>}/>     
         </Routes>
-
+        <Footer/>
         
       
     </div>
