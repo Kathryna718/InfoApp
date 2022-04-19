@@ -1,7 +1,11 @@
 import React, { useState } from "react";
+import Confetti from "react-confetti";
+import useWindowSize from "react-use/lib/useWindowSize";
+
 import "./App.css";
 
 function Form() {
+  const { width, height } = useWindowSize();
   const x = 0;
   const [selected, setSelected] = useState(false);
   const handleClick = () => {
@@ -10,7 +14,17 @@ function Form() {
   console.log(selected);
 
   return (
-      <div class="form">
+    <div class="form">
+      <Confetti
+        width={width}
+        height={height}
+        run={true}
+        numberOfPieces={selected ? 200 : 0}
+      />
+      <div className={selected ? "click-me" : "click-me animate"}>
+        {" "}
+        Choose an option below!
+      </div>
       <div class="wrapper">
         <h3>Best BankingApp of 2022</h3>
         <div
@@ -30,7 +44,8 @@ function Form() {
                 <span class="circle" onClick={handleClick}></span>
                 <span class="text">venmo</span>
               </div>
-              <span className="percent"
+              <span
+                className="percent"
                 style={selected ? { display: "block" } : { display: "none" }}
               >
                 30%
@@ -56,7 +71,8 @@ function Form() {
                 <span class="circle" onClick={handleClick}></span>
                 <span class="text">zelle</span>
               </div>
-              <span className="percent"
+              <span
+                className="percent"
                 style={selected ? { display: "block" } : { display: "none" }}
               >
                 40%
@@ -82,7 +98,8 @@ function Form() {
                 <span class="circle" onClick={handleClick}></span>
                 <span class="text">chime</span>
               </div>
-              <span className="percent"
+              <span
+                className="percent"
                 style={selected ? { display: "block" } : { display: "none" }}
               >
                 20%
@@ -108,7 +125,8 @@ function Form() {
                 <span class="circle" onClick={handleClick}></span>
                 <span class="text">varo</span>
               </div>
-              <span className="percent"
+              <span
+                className="percent"
                 style={selected ? { display: "block" } : { display: "none" }}
               >
                 10%
@@ -118,7 +136,7 @@ function Form() {
           </label>
         </div>
       </div>
-   </div>
+    </div>
   );
 }
 

@@ -717,3 +717,26 @@ label .selected .progress::after{
 label .selectall :is(.percent, .progress){
   display:block;
 }
+.click-me {
+  width: fit-content;
+  font-size: 40px;
+  text-align: center;
+  padding-bottom: 30px;
+  color: #fff;
+}
+.animate {
+  animation: flash 1s linear infinite;
+}
+
+.confetti-wrapper {
+  position: absolute;
+}
+
+@keyframes flash {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
